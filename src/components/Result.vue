@@ -7,9 +7,7 @@
     :append-to-body="true"
   >
     <div class="dialog-title" slot="title">
-      <span :style="{ fontSize: '18px' }">
-        抽選結果
-      </span>
+      <span :style="{ fontSize: '18px' }"> 抽選結果 </span>
       <span :style="{ fontSize: '14px', color: '#999', marginLeft: '10px' }">
         数字をクリックして削除できます
       </span>
@@ -28,9 +26,7 @@
         {{ item.name }}
       </span>
       <span class="value">
-        <span v-if="item.value && item.value.length === 0">
-          抽選未実施
-        </span>
+        <span v-if="item.value && item.value.length === 0"> 抽選未実施 </span>
         <span
           class="card"
           v-for="(data, j) in item.value"

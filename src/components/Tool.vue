@@ -4,13 +4,13 @@
       @click="startHandler"
       type="primary"
       size="mini"
-      style="width: 80px;"
+      style="width: 80px"
       >{{ running ? '停止' : '開始' }}</el-button
     >
     <el-button
       size="mini"
       @click="showRemoveoptions = true"
-      style="width: 80px;"
+      style="width: 80px"
     >
       リセット
     </el-button>
@@ -123,8 +123,8 @@
       :append-to-body="true"
     >
       <el-form ref="form" :model="removeInfo" label-width="80px" size="mini">
-        <el-form-item label=" " style="margin-left: -30px;">
-          <el-radio-group v-model="removeInfo.type" style="margin-top: 10px;">
+        <el-form-item label=" " style="margin-left: -30px">
+          <el-radio-group v-model="removeInfo.type" style="margin-top: 10px">
             <el-radio border :label="0">全データをリセット</el-radio>
             <el-radio border :label="1">抽選設定をリセット</el-radio>
             <!-- <el-radio border :label="2">名簿をリセット</el-radio> -->
@@ -136,12 +136,12 @@
           <el-button
             type="primary"
             @click="resetConfig"
-            style="width: 120px;margin-left: -12px;"
+            style="width: 120px; margin-left: -12px"
             >リセット確定</el-button
           >
           <el-button
             @click="showRemoveoptions = false"
-            style="margin-top: 10px;width: 120px;margin-left: -12px;"
+            style="margin-top: 10px; width: 120px; margin-left: -12px"
             >キャンセル</el-button
           >
         </el-form-item>
